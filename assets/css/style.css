@@ -12,9 +12,14 @@ body {
 
 
 .header-pic {
-    background-image: url('../images/chesslogo.jpg');
+    background-image: url(../images/chesslogo.jpg);
     height: 500px;
     width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
     
 }
 
@@ -43,6 +48,9 @@ body {
          h1 {
              color:white;
          }
+
+         
+        
     
 
   
