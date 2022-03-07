@@ -1,33 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
-
+html {
+    background:	RGB(7,13,15);
+}
 body {
     font-family: 'Asul', sans-serif;
     font-weight: 400;
     color:#3a3a3a
+    
+    
 }
 
 
 .header-pic {
     background-image: url('../images/chesslogo.jpg');
-    height: 600px;
+    height: 500px;
     width: 100%;
-
-   
     
+}
+
+.ul-links {
+    list-style:none;
+    float: right;
+    display:flex;
+    padding: 8px;
+    letter-spacing: 2px;
     
     }
 
-    #ul-links {
-        font-size: 120%;
-        letter-spacing: 6px;
-    }
+    nav li {
+        background: fixed;
+         padding: 10px;
+         }
 
+         a {
+            
+             color:white;
+             padding: 1em 1.5em;
+         }
 
+         h1 {
+             color:white;
+         }
+    
 
-    #-links li {
-        
-        float: left;
-        margin: 30px;
-        list-style-type: none;
-
-    }
+  
