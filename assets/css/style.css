@@ -58,6 +58,7 @@ body {
              position: relative;
              top: 90%;
              float: right;
+             text-align: center;
             }
 
              p {
@@ -118,6 +119,12 @@ body {
                 width: 100%;
                 padding: 12px 20px;
                 margin: 8px 0;
+                }
+
+                input[type=checkbox] {
+                   
+                    
+                    
                 }
 
            
