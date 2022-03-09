@@ -59,7 +59,6 @@ h2 {
     
     color: white;
     position: absolute;
-    padding-left: 20px;
     font-size: 40px;
     float: left;
     top: 0px;
@@ -86,36 +85,19 @@ ul li{
     list-style: none;
     margin-left: 62px;
     margin-top: 27px;
-    font-size: 14px;
+    
     
 }
 
 ul li a{
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
 
 ul li a:hover{
-    color: #ff7200;
-}
-
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
-
-
-
-
-.btn:focus{
-    outline: none;
-}
-
-.srch:focus{
-    outline: none;
+    color: red;
 }
 
 .content{
@@ -212,12 +194,9 @@ ul li a:hover{
     outline: none;
 }
 
-::placeholder{
-    color: #fff;
-    
-}
 
-.btnn{
+
+.btnn {
     width: 240px;
     height: 40px;
     background: #D8C308;
