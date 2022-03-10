@@ -313,10 +313,15 @@ h3 {
     top: 425px;
     }
 
-    /* Media queries */
+    
 
-/* For larger to medium screens size from 1200px wide and down */
+/* Resies the page as it gets smaller with the @media command */
 @media screen and (max-width: 1139px) {
+    html, body{ 
+        overflow: scroll;
+    }
+
+    
     .menu {
         float: left;
         margin-left: -30px;
