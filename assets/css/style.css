@@ -48,11 +48,24 @@ h2 {
     
 }
 
+.socials2 {
+    
+    position: absolute;
+    top: 770px;
+    left: 32%;
+
+    
+}
+
 .socials li {
 
     font-size: xx-large;
     
 
+}
+
+.socials2  li {
+    font-size: xx-large;
 }
 
 .logo{
@@ -244,4 +257,34 @@ ul li a:hover{
 }
 .icons ion-icon:hover{
     color: #D8C308;
+}
+
+/* Table */
+.table {
+    position:relative;
+    left: 700px;
+    
+}
+
+.demo {
+    position:relative;
+    left: 700px;
+    border:1px solid #C0C0C0;
+    border-collapse:collapse;
+    padding:5px;
+}
+.demo th {
+    border:1px solid #C0C0C0;
+    padding:5px;
+    background:#F0F0F0;
+}
+.demo td {
+    border:1px solid #C0C0C0;
+    padding:5px;
+}
+
+h3 {
+    float:left;
+    position:relative;
+    left: 700px;
 }
