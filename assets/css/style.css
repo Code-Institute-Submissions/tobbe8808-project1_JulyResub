@@ -315,8 +315,14 @@ h3 {
 
     
 
+
+
+
 /* Resies the page as it gets smaller with the @media command */
 @media screen and (max-width: 1139px) {
+
+
+
     html, body{ 
         overflow: scroll;
     }
