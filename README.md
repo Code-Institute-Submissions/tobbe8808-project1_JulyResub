@@ -102,7 +102,7 @@ The Link to the website - [Chess Club](https://tobbe8808.github.io/project1/)
 
 - I used W3Sschools [W3S](https://www.w3schools.com/)
 - I used some knowledge from the Love Running Project.
-- I used tutorialspoint [Tutorialspoint(https://www.tutorialspoint.com/css/)
+- I used tutorialspoint [Tutorialspoint](https://www.tutorialspoint.com/css/)
 - I lookt at a few diffrent Youtube Tutorials [YouTube](https://www.tutorialspoint.com/css/)
 
 
