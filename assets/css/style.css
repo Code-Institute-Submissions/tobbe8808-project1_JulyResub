@@ -7,7 +7,7 @@
 
   html {
     align-items: center;
-    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(/assets/images/chessbackground.jpg) no-repeat center center fixed;
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/chessbackground.jpg) no-repeat center center fixed;
     background-size: cover;
     display: flex;
     height: 100vh;
