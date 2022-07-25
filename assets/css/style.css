@@ -1,141 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
 
 /* html and body element */
-html, body{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
+}
+
+  html {
+    align-items: center;
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(/assets/images/chessbackground.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
     font-family: 'Asul', sans-serif;
     font-weight: 400;
-    background-color: #3a3a3a;
-}
-
-/* Styling and location for the h2*/
-h2 {
-    top:400px;
-    position:relative;
-    color:white;
-        
-    }
-
-    #lasth2 {
-        color:red;
-    }
-
-/* background picture styling elements */
-.main{
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/chessbackground.jpg);
-    background-size: cover;
-    height: 100vh;
-}
-
-/* Nav bar positioning*/
-.navbar{
-    width: 800px;
-    height: 80px;
-    margin: auto;
-
-}
-
-/* Socials styling and positioning */
-
-.socials {
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Asul', sans-serif;
+    font-weight: 400;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav,
+  #main > aside {
+    flex: 0 0 20vw;
     
-    position: absolute;
-    top: 770px;
-    left: 32%;
-}
-
-.socials2 {
+  }
+  #main > nav {
+    order: -1;
+  }
+  header, footer {
     
-    position: absolute;
-    top: 870px;
-    left: 39%;
-}
-
-.socials li {
-
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  .socials {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: xx-large;
+    gap: 10px 20px;
     
-
+    
 }
 
-.socials2  li {
-    font-size: xx-large;
-}
-
-/* titles style text for page "chess club gotenburg" */
-
-.logo{
-    
-    color: white;
-    position: absolute;
-    font-size: 40px;
-    float: left;
-    top: 0px;
-    
-    
+ul{
+    list-style: none;
 }
 
 .menu{
+  text-decoration: none;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px 20px;
+  
 
-    width: 400px;
-    float: right;
-    height: 60px;
-    
 }
 /* ul styling elements  */
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-   
-}
 
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    
-    
-}
 
-ul li a{
-    text-decoration: none;
+a {
+    text-decoration:none;
     color: white;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
+    
+ }
 
-ul li a:hover{
+ ul li a:hover{
     color: red;
 }
 
-/* content position and styling */
-
-.content{
-    
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    color: white;
-    position: relative
-    
-    
-}
-
-.content h1{
-    text-align: left;
-    font-size: 30px;
-    padding-left: 10px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-
-
-.content .cn{
-    position: absolute;
+.form .cn{
+    margin-top: 10px;
     width: 200px;
     height: 40px;
     top:80%;
@@ -143,14 +91,14 @@ ul li a:hover{
     background: red;
     border: none;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 30px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease;
     }
 
-.content .cn a{
+.form .cn a{
     text-decoration: none;
     color: #000;
     
@@ -160,14 +108,9 @@ ul li a:hover{
     background-color: white;
 }
 
-/* form position and styling */
-
 .form{
-    width: 250px;
-    height: 380px;
+    display: flex;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    left: 870px;
     border-radius: 10px;
     padding: 25px;
 }
@@ -187,154 +130,116 @@ ul li a:hover{
     margin-top: 30px;
     }
 
+    h2 {
+  color: white;
+  display:flex;
+  justify-content: center;
+  text-align: center;
 
-/* Table styling */
-.table {
-    color:white;
-    position:relative;
-    left: 600px;
-    top:310px;
+    }
+
+    #lasth2 {
+        color:red;
+    }
+
+    .logo{
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
     
+    /* Table styling */
+.table {
+  color:white;
+  text-align: center;
 }
 
 .opening {
-    color:white;
-    position:relative;
-    left: 600px;
-    top: 300px;
-    border:1px solid #C0C0C0;
-    border-collapse:collapse;
-    padding:5px;
-
+  color:white;
+  border:1px solid #C0C0C0;
+  border-collapse:collapse;
+  padding:5px;
+  margin-left: 15%;
+  margin-right:15%;
+  width: 70%;
 }
 .opening th {
-    color:red;
-    border:1px solid #C0C0C0;
-    padding:5px;
-    background:#F0F0F0;
+  color:red;
+  padding:5px;
+  background:#F0F0F0;
+  
 }
 .opening td {
-    border:1px solid #C0C0C0;
-    padding:5px;
+  border:1px solid #C0C0C0;
+  padding:5px;
 }
 
-h3 {
-    
-    color:white;
-    position: absolute;
-    left: 600px;
-    top: 250px;
-    width: 25em;
-    font-size: 20px;
-    }
-    h4 {
-        color:white;
-        position: absolute;
-        left: 600px;
-        top: 300px;
-        width: 25em;
-        font-size: 20px; 
-    }
-
-    .video {
-    position: absolute;
-    left: 560px;
-    top: 425px;
-    }
-
-    
-
-
+.video {
+  margin-left: 15%;
+  margin-right:15%;
+  width: 70%;
+  }
 
 
 /* @media commands to restyle when page gets smaller */
-@media screen and (max-width: 1139px) {
-
-
-
-    html, body{ 
-        overflow: scroll;
-    }
-
-    
-    .menu {
-        float: left;
-        margin-left: -30px;
-        margin-top: -80px;
-        line-height: 350px;
-    }
-
-    .form {
-        width: 250px;
-        height: 380px;
-        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-        position: absolute;
-        left: 0px;
-    }
-
-    .opening {
-        
-        color:white;
-        position:relative;
-        left: 0px;
-        top: 300px;
-        border:1px solid #C0C0C0;
-        border-collapse:collapse;
-        padding:5px;
-    }
-
-    
-
-    .table {
-        color:white;
-        position:relative;
-        left: 0px;
-        top:300px;
-
-    }
-
-    .video {
-        position: absolute;
-        left: 0px;
-        top: 370px;
-        }
-
-    h2 {
-        top:600px;
-        position:relative;
-        color:white;
-        }
-        
-        h3 {
-            color:white;
-            position: absolute;
-            left: 0px;
-            top: 250px;
-            width: 25em;
-            font-size: 20px;
-        }
-
-        h4 {
-            color:white;
-            position: absolute;
-            left: 0px;
-            top: 250px;
-            width: 25em;
-            font-size: 20px;
-        }
-
-  
+@media screen and (max-width: 1369px) {
   .socials {
+
+align-items: flex-start;
+
+  }
+  #main {
     
-    position: absolute;
-    top: 700px;
-    left: -8%;
-    }
-    .socials2 {
-    
-        position: absolute;
-        top: 700px;
-        left: -8%;
-        
-        }
+    flex: inherit;
 }
+  }
+
+
+@media screen and (max-width: 575px) {
+  .logo {
+    font-size:20px ;
+  }
+  
+  h2 {
+    font-size:15px;
+  }
+  .form {
+    margin-right: 50px;
+    }
+}
+
+/* For medium screen sizes from 320px wide and down */
+@media screen and (max-width: 320px) {
+  .logo {
+  font-size: 18px;
+}
+h2 {
+  font-size:11px;
+}
+.table {
+  font-size: 13px
+}
+.opening {
+  margin-left: 0%;
+  ;
+}
+.socials {
+  
+
+}
+.form {
+  margin-right: 0px;
+}
+#main {
+  flex-wrap: wrap;
+  
+}
+header, footer, article, nav, aside {
+  padding: 0em;
+}
+
+header, footer {
+  height: 14vh;
+}
+}
+
