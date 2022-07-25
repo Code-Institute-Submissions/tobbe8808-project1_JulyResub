@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
 
-/* html and body element */
+/* all elements */
 * {
     box-sizing: border-box;
 }
 
+/* html and body elements */
   html {
     align-items: center;
     background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/chessbackground.jpg) no-repeat center center fixed;
@@ -15,6 +16,7 @@
     font-family: 'Asul', sans-serif;
     font-weight: 400;
   }
+
   body {
     display: flex;
     min-height: 100vh;
@@ -23,28 +25,36 @@
     font-family: 'Asul', sans-serif;
     font-weight: 400;
   }
+
+/* styling #main targets elements */
   #main {
     display: flex;
     flex: 1;
   }
+
   #main > article {
     flex: 1;
   }
+
   #main > nav,
   #main > aside {
     flex: 0 0 20vw;
-    
+
   }
+
   #main > nav {
     order: -1;
   }
   header, footer {
-    
+
     height: 20vh;
   }
+
   header, footer, article, nav, aside {
     padding: 1em;
   }
+
+/* styling elements for the socials*/
   .socials {
     
     display: flex;
@@ -60,6 +70,7 @@ ul{
     list-style: none;
 }
 
+/* styling elements for the navigation bar */
 .menu{
   text-decoration: none;
   display:flex;
@@ -69,9 +80,9 @@ ul{
   
 
 }
-/* ul styling elements  */
 
 
+/* styling elements for anything with a link*/
 a {
     text-decoration:none;
     color: white;
@@ -82,6 +93,7 @@ a {
     color: red;
 }
 
+/* styling elements for the form */
 .form .cn{
     margin-top: 10px;
     width: 200px;
@@ -148,7 +160,8 @@ a {
         font-size: 40px;
     }
     
-    /* Table styling */
+    /* styling elements for the table for opening times */
+
 .table {
   color:white;
   text-align: center;
@@ -174,6 +187,7 @@ a {
   padding:5px;
 }
 
+/* styling elements for the video */
 .video {
   margin-left: 15%;
   margin-right:15%;
@@ -181,7 +195,7 @@ a {
   }
 
 
-/* @media commands to restyle when page gets smaller */
+/* @media commands to restyle when page gets smaller then max-width: 1369px  */
 @media screen and (max-width: 1369px) {
   .socials {
 
@@ -194,6 +208,7 @@ align-items: flex-start;
 }
   }
 
+/* @media commands to restyle when page gets smaller then max-width: 575px  */
 
 @media screen and (max-width: 575px) {
   .logo {
@@ -208,7 +223,7 @@ align-items: flex-start;
     }
 }
 
-/* For medium screen sizes from 320px wide and down */
+/* @media commands to restyle when page gets smaller then max-width: 320px  */
 @media screen and (max-width: 320px) {
   .logo {
   font-size: 18px;
@@ -223,10 +238,7 @@ h2 {
   margin-left: 0%;
   ;
 }
-.socials {
-  
 
-}
 .form {
   margin-right: 0px;
 }
