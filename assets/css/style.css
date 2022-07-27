@@ -210,6 +210,8 @@ align-items: flex-start;
 
 /* @media commands to restyle when page gets smaller then max-width: 575px  */
 
+
+
 @media screen and (max-width: 575px) {
   .logo {
     font-size:20px ;
