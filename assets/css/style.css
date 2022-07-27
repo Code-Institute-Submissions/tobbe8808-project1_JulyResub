@@ -1,259 +1,213 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
 
-/* all elements */
-* {
-    box-sizing: border-box;
+/* html elements */
+html {
+  align-items: center;
+  background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/chessbackground.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  font-family: 'Asul', sans-serif;
+  font-weight: 400;
 }
 
-/* html and body elements */
-  html {
-    align-items: center;
-    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/chessbackground.jpg) no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    font-family: 'Asul', sans-serif;
-    font-weight: 400;
-  }
+/* main flexbox */
+.main {
+  display: flex;
+  flex-flow:row wrap;
+  text-align: center;
+}
 
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-    font-family: 'Asul', sans-serif;
-    font-weight: 400;
-  }
+.main > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+}
 
-/* styling #main targets elements */
-  #main {
-    display: flex;
-    flex: 1;
-  }
+/* header */
+.header {
+  height: 120px;
+}
 
-  #main > article {
-    flex: 1;
-  }
+/* footer */
+.footer {
+  height: 80px;
+}
+/* article */
+.article {
+  text-align: left;
+  font-size: 15px;
+}
 
-  #main > nav,
-  #main > aside {
-    flex: 0 0 20vw;
-
-  }
-
-  #main > nav {
-    order: -1;
-  }
-  header, footer {
-
-    height: 20vh;
-  }
-
-  header, footer, article, nav, aside {
-    padding: 1em;
-  }
-
-/* styling elements for the socials*/
-  .socials {
+/* socials styling */
+.socials {
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large;
-    gap: 10px 20px;
-    
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  gap: 10px 20px;
 }
 
 ul{
-    list-style: none;
+  list-style: none;
 }
 
-/* styling elements for the navigation bar */
+/* navigation styling */
 .menu{
   text-decoration: none;
   display:flex;
   justify-content: center;
   text-align: center;
   gap: 10px 20px;
-  
+  }
 
-}
-
-
-/* styling elements for anything with a link*/
 a {
     text-decoration:none;
     color: white;
-    
- }
-
- ul li a:hover{
-    color: red;
-}
-
-/* styling elements for the form */
-.form .cn{
-    margin-top: 10px;
-    width: 200px;
-    height: 40px;
-    top:80%;
-    left: 0;
-    background: red;
-    border: none;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
     }
 
+ul li a:hover {
+  color: red;
+}
+
+/* form styling */
+.form .cn{
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  top:80%;
+  left: 0;
+  background: red;
+  border: none;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+  }
+
 .form .cn a{
-    text-decoration: none;
-    color: #000;
-    
+  text-decoration: none;
+  color: #000;
+  
 }
 
 .cn:hover{
-    background-color: white;
+  background-color: white;
 }
 
 .form{
-    display: flex;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    border-radius: 10px;
-    padding: 25px;
+  display: flex;
+  background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  border-radius: 10px;
+  padding: 25px;
 }
 
 
 .form input{
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 4px solid white;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    }
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 4px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  }
 
-    h2 {
-  color: white;
-  display:flex;
-  justify-content: center;
-  text-align: center;
+  /* h2 styling */
+  h2 {
+    color: white;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+#lasth2 {
+    color:red;
+      }
 
-    }
-
-    #lasth2 {
-        color:red;
-    }
-
-    .logo{
+/* header text styling */
+.logo {
         text-align: center;
         color: white;
         font-size: 40px;
     }
-    
-    /* styling elements for the table for opening times */
 
-.table {
-  color:white;
-  text-align: center;
-}
-
-.opening {
-  color:white;
-  border:1px solid #C0C0C0;
-  border-collapse:collapse;
-  padding:5px;
-  margin-left: 15%;
-  margin-right:15%;
-  width: 70%;
-}
-.opening th {
-  color:red;
-  padding:5px;
-  background:#F0F0F0;
-  
-}
-.opening td {
-  border:1px solid #C0C0C0;
-  padding:5px;
-}
-
-/* styling elements for the video */
-.video {
-  margin-left: 15%;
-  margin-right:15%;
-  width: 70%;
-  }
-
-
-/* @media commands to restyle when page gets smaller then max-width: 1369px  */
-@media screen and (max-width: 1369px) {
-  .socials {
-
-align-items: flex-start;
-
-  }
-  #main {
-    
-    flex: inherit;
-}
-  }
-
-/* @media commands to restyle when page gets smaller then max-width: 575px  */
-
-
-
-@media screen and (max-width: 575px) {
-  .logo {
-    font-size:20px ;
-  }
-  
-  h2 {
-    font-size:15px;
-  }
-  .form {
-    margin-right: 50px;
+/* table styling */
+    .table {
+      color:white;
+      text-align: center;
     }
-}
+    
+    .opening {
+      color:white;
+      border:1px solid #C0C0C0;
+      border-collapse:collapse;
+      padding:5px;
+      margin-left: 15%;
+      margin-right:15%;
+      width: 70%;
+    }
+    .opening th {
+      color:red;
+      padding:5px;
+      background:#F0F0F0;
+      
+    }
+    .opening td {
+      border:1px solid #C0C0C0;
+      padding:5px;
+    }
+    
+    /* styling elements for the video */
+    .video {
+      margin-left: 15%;
+      margin-right:15%;
+      width: 70%;
+      }
 
-/* @media commands to restyle when page gets smaller then max-width: 320px  */
-@media screen and (max-width: 320px) {
-  .logo {
-  font-size: 18px;
-}
-h2 {
-  font-size:11px;
-}
-.table {
-  font-size: 13px
-}
-.opening {
-  margin-left: 0%;
-  ;
-}
+      /* mediaqueries max-width: 800px lower  */
+      @media screen and (max-width: 800px) {
+        .main {
+      flex: 3;
+        }
 
-.form {
-  margin-right: 0px;
-}
-#main {
-  flex-wrap: wrap;
-  
-}
-header, footer, article, nav, aside {
-  padding: 0em;
-}
+        .aside {
+            order: 2;
+              }
 
-header, footer {
-  height: 14vh;
-}
-}
+        .main {
+          order:2;
+        }
+
+        .footer {
+          order: 4;
+        }
+
+        .article {
+          
+          font-size: 15px;
+      }
+        
+
+      }
+/* mediaqueries max-width: 600px lower  */
+      @media screen and (max-width: 600px) {
+        .main > * {
+          padding: 1px;
+          margin: 1px;
+        }
+
+        .article {
+          flex:1;
+        }
+      }
+
 

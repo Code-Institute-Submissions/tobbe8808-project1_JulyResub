@@ -14,26 +14,30 @@
 </head>
 <!--Main page-->
 <body>
-    <header>
+    <div class="main">
+    <header class="header">
         <h1 class="logo">Chess Club Gothenburg</h1>
+    </header>
+    <!--navigation-->
+        <nav class="nav">
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="meetings.html">Meetings</a></li>
             <li><a href="video.html">Video</a></li>
         </ul>
-    </header>
+    </nav>
+    
 
-    <div id="main">
-      <article>
+    <!--article-->
+      <article class="article">
         <h2>Chess Social Club and Tutoring Gothenburg</h2>
         <h2>Socialize and Learn to play better</h2>
         <h2 id="lasth2">We also do Tutoring!</h2>
       </article>
-      <nav></nav>
+      
       <!--join form-->
 
-      <aside>
-        <div class="form">
+      <aside class="form">
             <form id="submit-form">
                     <input type="text" id="firstname" placeholder="Name" required>
                     <input type="text" id="lastname" placeholder="Surname" required>
@@ -41,12 +45,11 @@
                     <input type="number" id="phone" placeholder="Phonenumber" required>
                     <button type="submit" form="submit-form" class="cn">SIGN UP</button>
                 </form>
-                </div>
       </aside>
-    </div>
+    
 
     <!--Footer with socials links-->
-    <footer>
+    <footer class="footer">
         <ul class="socials">
             <li>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook opens in other tab"> <i class="fa-brands fa-facebook"></i> </a>
@@ -62,6 +65,7 @@
             </li>
         </ul>
     </footer>
+</div>
 
                     <!-- fontawesome input adress -->
                         <script src="https://kit.fontawesome.com/b00a45095b.js" crossorigin="anonymous"> </script>
